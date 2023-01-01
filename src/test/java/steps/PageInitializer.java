@@ -13,10 +13,13 @@ public class PageInitializer {
     public static EmployeeListPage employeeList;
 
 
+    public static ChangeEmpContacts empContacts;
+
     public static void intializePageObjects(){
         login = new LoginPage();
         dashboard = new DashboardPage();
         addEmployee = new AddEmployeePage();
         employeeList = new EmployeeListPage();
+        empContacts=new ChangeEmpContacts();
     }
 }
