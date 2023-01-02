@@ -7,7 +7,8 @@ import utils.CommonMethods;
 public class ChangeEmpContacts extends CommonMethods {
     @When("user clicks on desire contact")
     public void user_clicks_on_desire_contact() {
-click(empContacts.)
+
+//click(empContacts.)
     }
 
     @Then("contact details")

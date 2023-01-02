@@ -8,15 +8,15 @@ Feature: US-18 Change employee contacts feature
     When user clicks on PIM option
     And user clicks on EmployeeList option
 
-@batch14 @sprint2
+@groupProject
 
   Scenario: Search employee by name
   When user enters valid employee name
   And user clicks on search button
 
-  @sprint2
 
   Scenario: Contact details editor verification
+
 When user clicks on desire contact
   Then contact details
     And user click edit button
