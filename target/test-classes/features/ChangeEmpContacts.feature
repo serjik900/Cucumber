@@ -9,13 +9,9 @@ Feature: US-18 Change employee contacts feature
     And user clicks on EmployeeList option
 
 
-  
-
   @groupProject
 
   Scenario: Contact details editor verification
-    When user enters valid employee name
-    And user clicks on search button
 
 When user clicks on desire contact
   Then contact details
@@ -31,5 +27,6 @@ Then user verify that Address Street one textbox is displayed and user can enter
     And Work Phone textbox is displayed and user can enter values there
     And Work Email textbox is displayed and user can enter values there
     And Other Email textbox is displayed and user can enter values there
+    Then user able to save the changes
 
 

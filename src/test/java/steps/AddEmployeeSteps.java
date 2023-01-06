@@ -13,6 +13,7 @@ import utils.ExcelReader;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class AddEmployeeSteps extends CommonMethods {
 
@@ -36,9 +37,9 @@ public class AddEmployeeSteps extends CommonMethods {
      //   WebElement firstName = driver.findElement(By.id("firstName"));
        // firstName.sendKeys("soman");
 
-        sendText(addEmployee.firstNameField, "joshpan");
-        sendText(addEmployee.lastNameField, "veranullah");
-
+        sendText(addEmployee.firstNameField, "Joe");
+        sendText(addEmployee.lastNameField, "Rogan");
+driver.manage().timeouts().implicitlyWait(20000, TimeUnit.SECONDS);
        // WebElement lastName = driver.findElement(By.id("lastName"));
        // lastName.sendKeys("yuria");
     }

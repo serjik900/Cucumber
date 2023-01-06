@@ -4,8 +4,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.CommonMethods;
+import java.util.List;
 
 public class ChangeEmpContactsPage extends CommonMethods {
+
+@FindBy(xpath = "//table[@id='resultTable']/tbody/tr/td[2]/a")
+public WebElement FirstEmpFromList;
+
+@FindBy (xpath="//*[@id=\"sidenav\"]/li[2]")
+public WebElement ContactDetailsBtn;
+
 
     @FindBy(id="btnSave")
     public WebElement EditAndSaveBtn;
@@ -25,7 +33,7 @@ public class ChangeEmpContactsPage extends CommonMethods {
     @FindBy(id="contact_emp_zipcode")
     public WebElement ZipField;
 
-    @FindBy(id="contact_country")
+    @FindBy(xpath="//select[@id='contact_country']")
     public WebElement CountryField;
 
     @FindBy(id="contact_emp_hm_telephone")

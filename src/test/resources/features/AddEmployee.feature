@@ -8,7 +8,7 @@ Feature: Add Employee
     When user clicks on PIM option
     And user clicks on Add Employee button
 
-  @sprint3 @regression
+  @sprint5 @regression
   Scenario: Adding one employee
     And user enter firstname and lastname
     And user clicks on save button
